@@ -19,5 +19,8 @@
     "url": "https://github.com/RainbowCake1/frontend-project-46/issues"
   },
   "homepage": "https://github.com/RainbowCake1/frontend-project-46#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
 }
