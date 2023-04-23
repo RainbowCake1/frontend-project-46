@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/RainbowCake1/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/RainbowCake1/frontend-project-46/actions)",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
@@ -21,6 +21,9 @@
   "homepage": "https://github.com/RainbowCake1/frontend-project-46#readme",
   "type": "module",
   "dependencies": {
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7"
   }
 }
