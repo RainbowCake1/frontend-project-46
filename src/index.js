@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path';
 
 const getDataFile = (filepath) => {
-    const pathFull = path.resolve(process.cwd(), filepath);
+    const pathFull = path.join(process.cwd(), filepath);
     return fs.readFileSync(pathFull)
 }
 
