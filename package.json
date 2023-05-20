@@ -21,6 +21,7 @@
   "homepage": "https://github.com/RainbowCake1/frontend-project-46#readme",
   "type": "module",
   "dependencies": {
+    "@jest/globals": "^29.5.0",
     "commander": "^10.0.1",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
