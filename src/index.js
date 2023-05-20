@@ -1,16 +1,16 @@
 import _ from 'lodash';
-import fs from 'fs'
+import fs from 'fs';
 import path from 'path';
 
 const getDataFile = (filepath) => {
-    const pathFull = path.join(process.cwd(), filepath);
-    return fs.readFileSync(pathFull)
+  const pathFull = path.resolve(process.cwd(), filepath);
+  return fs.readFileSync(pathFull)
 }
 
 const parse = (data) => JSON.parse(data);
 
 const genDiff = (filepath1,filepath2) =>{
-    const filePathOne = getDataFile(filepath1);
+  const filePathOne = getDataFile(filepath1);
     const filePathTwo = getDataFile(filepath2);
     const parseInObjectOne = parse(filePathOne);
     const parseInObjectTwo = parse(filePathTwo);
