@@ -4,13 +4,11 @@ const parse = (data, format) => {
   switch (format) {
     case 'json':
       return JSON.parse(data);
-      break;
     case 'yml':
     case 'yaml':
       return yaml.load(data);
-      break;
     default:
-      console.log(format);
+      throw new Error(`Unkown parsing format: '${format}`);
   }
 };
 export default parse;
