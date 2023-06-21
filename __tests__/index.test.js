@@ -15,7 +15,7 @@ const resultJson = readFile('resultjson.txt');
 const file1 = './__fixtures__/file1.json';
 const file2 = './__fixtures__/file2.json';
 
-const resultYml = readFile('resultyml.txt'); 
+const resultYml = readFile('resultyml.txt');
 
 const file3 = './__fixtures__/file3.yml';
 const file4 = './__fixtures__/file4.yml';
