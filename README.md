@@ -4,7 +4,7 @@
 <a href="https://codeclimate.com/github/RainbowCake1/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/64aec53012a69e511db0/test_coverage" /></a>
 
 <h1>Проект "Вычислитель Отличий"</h1>
-<p>Тут будет описание</p>
+<p>Данная программа вычисляет отличия между двумя файлами</p>
 
 <h2>Примеры использования</h2>
 <p>Сравнение плоских файлов JSON</p>
