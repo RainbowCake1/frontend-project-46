@@ -1,8 +1,8 @@
 import { fileURLToPath } from 'url';
-import { expect, test } from '@jest/globals';
-import fs from 'fs';
+import { describe, expect, test } from '@jest/globals';
+import fs, {} from 'fs';
 import path, { dirname } from 'path';
-import genDiff from '../src';
+import genDiff from '../src/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,16 +10,16 @@ const __dirname = dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
 
-const file1 = './__fixtures__/file1.json';
-const file2 = './__fixtures__/file2.json';
+const formats = ['json', 'yml'];
 
-const resultYml = readFile('resultyml.txt');
+describe('gendiff', () => {
+  test.each(formats)('exp', (format) => {
+    const file1 = getFixturePath(`file1.${format}`);
+    const file2 = getFixturePath(`file2.${format}`);
 
-const file3 = './__fixtures__/file1.yml';
-const file4 = './__fixtures__/file2.yml';
-
-const resultplain = readFile('resultplain.txt');
-test('exp', () => {
-  expect(genDiff(file3, file4)).toEqual(resultYml);
-  expect(genDiff(file1, file2)).toEqual(resultplain);
+    expect(genDiff(file1, file2)).toEqual(readFile('resultrec.txt'));
+    expect(genDiff(file1, file2, 'json')).toEqual(readFile('resultjson.txt'));
+    expect(genDiff(file1, file2, 'plain')).toEqual(readFile('resultplain.txt'));
+    expect(genDiff(file1, file2, 'stylish')).toEqual(readFile('resultrec.txt'));
+  });
 });
