@@ -8,7 +8,7 @@ const parse = (data, format) => {
     case 'yaml':
       return yaml.load(data);
     default:
-      throw new Error(`Unkown parsing format: '${format}`);
+      throw new Error('Unkown parsing format');
   }
 };
 export default parse;
