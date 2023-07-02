@@ -8,7 +8,16 @@
 
 <h2>Примеры использования</h2>
 <p>Сравнение плоских файлов JSON</p>
-<a href="https://asciinema.org/a/EiV6kD58RvqkLFp9L4Tdy68Yn" target="_blank"><img src="https://asciinema.org/a/EiV6kD58RvqkLFp9L4Tdy68Yn.svg" /></a>
+<a href="https://asciinema.org/a/EjXsHtFbXcOK8gy1uSBoUB0mc" target="_blank"><img src="https://asciinema.org/a/EjXsHtFbXcOK8gy1uSBoUB0mc.svg" /></a>
 
 <p>Сравнение плоских файлов YAML</p>
-<a href="https://asciinema.org/a/4xgNK6vhIuzOvfRx6F9gAcoYs" target="_blank"><img src="https://asciinema.org/a/4xgNK6vhIuzOvfRx6F9gAcoYs.svg" /></a>
+<a href="https://asciinema.org/a/RlnALPYIdR0ndHFRo9E1BA74y" target="_blank"><img src="https://asciinema.org/a/RlnALPYIdR0ndHFRo9E1BA74y.svg" /></a>
+
+<p>Рекурсивное сравнение</p>
+<a href="https://asciinema.org/a/RFfHwudK1G5vLpyxuPxwTfXiX" target="_blank"><img src="https://asciinema.org/a/RFfHwudK1G5vLpyxuPxwTfXiX.svg" /></a>
+
+<p>Плоское сравнение</p>
+<a href="https://asciinema.org/a/w6zZPIObCSovxmSdFDXcFPYsa" target="_blank"><img src="https://asciinema.org/a/w6zZPIObCSovxmSdFDXcFPYsa.svg" /></a>
+
+<p>Вывод в JSON</p>
+<a href="https://asciinema.org/a/SehAEu7g9oVnRRjorskFQoelg" target="_blank"><img src="https://asciinema.org/a/SehAEu7g9oVnRRjorskFQoelg.svg" /></a>
